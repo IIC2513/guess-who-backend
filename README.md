@@ -1,1 +1,0 @@
-# guess-who-backend
