@@ -1,4 +1,4 @@
-import Router from "koa-router";
+const Router = require('koa-router');
 
 const router = new Router();
 
@@ -24,4 +24,4 @@ router.get("personajes.show", "/show", async (ctx) => {
     ctx.body = characters;
 })
 
-export default router;
+module.exports = router;
