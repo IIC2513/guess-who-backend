@@ -7,6 +7,7 @@
   "author": "ElTioAndresCabezas <ascabezas@uc.cl>",
   "license": "MIT",
   "dependencies": {
+    "@koa/cors": "^4.0.0",
     "dotenv": "^16.0.3",
     "koa": "^2.14.2",
     "koa-body": "^6.0.1",
