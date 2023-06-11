@@ -14,7 +14,7 @@ module.exports = (sequelize, DataTypes) => {
         foreignKey: 'gameId',
       }); 
       this.hasMany(models.Character, {
-        foreignKey: 'id',
+        foreignKey: 'boardId',
       }); 
       this.belongsTo(models.Player, {
         foreignKey: 'playerId',

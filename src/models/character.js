@@ -20,7 +20,8 @@ module.exports = (sequelize, DataTypes) => {
     glasses: DataTypes.BOOLEAN,
     beard: DataTypes.BOOLEAN,
     oculto: DataTypes.BOOLEAN,
-    boardId: DataTypes.INTEGER
+    boardId: DataTypes.INTEGER,
+    image: DataTypes.STRING,
   }, {
     sequelize,
     modelName: 'Character',

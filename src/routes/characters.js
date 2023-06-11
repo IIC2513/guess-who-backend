@@ -2,26 +2,23 @@ const Router = require('koa-router');
 
 const router = new Router();
 
-const characters = [
-    {
-        name: "Homer Simpson",
-        description: "Homer Jay Simpson is a fictional character and the main protagonist of the American animated sitcom The Simpsons. He is voiced by Dan Castellaneta and first appeared on television, along with the rest of his family, in The Tracey Ullman Show short 'Good Night' on April 19, 1987.",
-        image: "https://upload.wikimedia.org/wikipedia/en/0/02/Homer_Simpson_2006.png"
-    },
-    {
-        name: "Marge Simpson",
-        description: "Marjorie Jacqueline Simpson is a fictional character in the American animated sitcom The Simpsons and part of the eponymous family. She is voiced by Julie Kavner and first appeared on television in The Tracey Ullman Show short 'Good Night' on April 19, 1987.",
-        image: "https://upload.wikimedia.org/wikipedia/en/0/0b/Marge_Simpson.png"
-    },
-    {
-        name: "Bart Simpson",
-        description: "Bartholomew JoJo Simpson is a fictional character in the American animated television series The Simpsons and part of the Simpson family. He is voiced by Nancy Cartwright and first appeared on television in The Tracey Ullman Show short 'Good Night' on April 19, 1987.",
-        image: "https://upload.wikimedia.org/wikipedia/en/a/aa/Bart_Simpson_200px.png"
+router.post("character.toggleCharacter", "/toggle", async(ctx) => {
+    try{
+        // En el body de la request viene el id del personaje
+        // Con esto podemos modificar la base de datos para cambiar el status 
+        // "oculto" del personaje seleccionado.
+        const { characterId } = ctx.request.body; // Extraigo los datos del body de la request
+        console.log(characterId);
+        const character = await ctx.orm.Character.findOne({where:{id: characterId}});
+        const result = await character.update(
+            { oculto: !character.oculto },
+        )
+        ctx.body = result;
+        ctx.status = 200;
+    } catch(error){
+        ctx.body = error;
+        ctx.status = 400;
     }
-]
-
-router.get("personajes.show", "/show", async (ctx) => {
-    ctx.body = characters;
 })
 
 module.exports = router;
