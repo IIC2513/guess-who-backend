@@ -1,0 +1,154 @@
+[
+  {
+    "_id": "b50f8ec6-5aad-44c9-9a1a-fd5f6684f021",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost/",
+    "url": "http://localhost/",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-06-12T02:55:38.220Z",
+    "modified": "2023-06-12T02:55:38.220Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "4213c37b-46a0-4bde-bdda-0ae90c76e35e",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:3000",
+    "url": "http://localhost:3000",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-06-12T02:55:44.338Z",
+    "modified": "2023-06-12T02:55:44.338Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "aab46422-02ae-46b8-a575-97dde5f9a449",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:3000/signup",
+    "url": "http://localhost:3000/signup",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2023-06-12T02:56:16.085Z",
+    "modified": "2023-06-12T02:56:16.085Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n    \"email\": \"micorreo@correo.com\",\n    \"username\": \"pepito123\",\n    \"password\": \"pepito321\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "bfb7d47a-b439-48c3-b192-2ec0dda7e6e3",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:3000/users",
+    "url": "http://localhost:3000/users",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-06-12T02:59:25.238Z",
+    "modified": "2023-06-12T03:07:59.077Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n    \"email\": \"micorreo@correo.com\",\n    \"password\": \"pepito321\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "46659165-6009-4269-9c74-f3b8df7c35ac",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:3000/login",
+    "url": "http://localhost:3000/login",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2023-06-12T03:04:01.024Z",
+    "modified": "2023-06-12T03:05:48.623Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n    \"email\": \"micorreo@correo.com\",\n    \"password\": \"pepito321\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "417c75d6-42ea-4d5c-a5a1-691c52547187",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:3000/",
+    "url": "http://localhost:3000/",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-06-12T03:10:10.000Z",
+    "modified": "2023-06-12T03:10:10.000Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n    \"email\": \"micorreo@correo.com\",\n    \"password\": \"pepito321\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "6f3a25d8-6a86-41d9-8313-5e1d3ed3833a",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:3000/scope-example/protecteduser",
+    "url": "http://localhost:3000/scope-example/protecteduser",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-06-12T03:21:33.544Z",
+    "modified": "2023-06-12T03:21:50.733Z",
+    "headers": [
+      {
+        "name": "Authorization",
+        "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzY29wZSI6WyJ1c2VyIl0sImlhdCI6MTY4NjUzOTE0OCwic3ViIjoiMTAifQ.inJcsOY4iEXjH8qv2OIHyjQkByNkix62t0IMWpsq4gc"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n    \"email\": \"micorreo@correo.com\",\n    \"password\": \"pepito321\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "89865913-ff90-43b7-b274-4c7886fe8cad",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:3000/scope-example/protectedadmin",
+    "url": "http://localhost:3000/scope-example/protectedadmin",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-06-12T03:22:04.600Z",
+    "modified": "2023-06-12T03:22:46.705Z",
+    "headers": [
+      {
+        "name": "Authorization",
+        "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzY29wZSI6WyJ1c2VyIiwiYWRtaW4iXSwiaWF0IjoxNjg2NTM5MTQ4LCJzdWIiOiIxMCJ9.W6jDB0Pp6oZa_dib66IwpUpfbSNiO2a-iv8EQGy6ZzU"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n    \"email\": \"micorreo@correo.com\",\n    \"password\": \"pepito321\"\n}",
+      "form": []
+    },
+    "tests": []
+  }
+]
