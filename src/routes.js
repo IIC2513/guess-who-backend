@@ -16,6 +16,8 @@ router.use('/boards', boards.routes());
 router.use(authRoutes.routes());
 
 
+
+
 // Desde esta línea, todas las rutas requieriran un JWT. Esto no aplica para
 // las líneas anteriores
 router.use(jwtMiddleware( { secret: process.env.JWT_SECRET } ))
